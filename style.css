@@ -1,0 +1,11 @@
+body{
+	background: green;
+	padding: 10;
+	margin: 2;
+}
+.page{
+	background-color : #fff;
+	opacity: .8;
+	width:1024px;
+	margin: 0 auto;
+}
