@@ -2,7 +2,16 @@
 <html>
 <head>
 	<title>Flower Catalog</title>
-	<link rel="stylesheet" type="text/css" href="style1.css">
+	<!-- <link rel="stylesheet" type="text/css" href="style1.css"> -->
+	<script type="text/javascript">
+		function hide(time){
+			var element = document.getElementById('animated');
+			element.style.display ='none';
+			setTimeout(function(){
+				element.style.display = 'inline';
+			},time);
+		}
+	</script>
 </head>
 <body>
 	<hr>	
@@ -12,15 +21,15 @@
 	<hr>
 	<table>
 		<td>
-			<img src="freshorigins.jpg">
+			<img src="freshorigins.jpg" height="900" border = "1">
 		</td>
 		<td>
 			<ul>
-			<li><a href="">Abeliophyllum</a></li>
+			<li><a href="abeliophyllum.html">Abeliophyllum</a></li>
 			<li><a href="">Ageratum</a></li>
 			</ul>
 			<a href="">Guest Book</a>
-			<img src="animated-flower-image-0021.gif">
+			<img id="animated" src="animated-flower-image-0021.gif" onclick = "hide(1000)">
 		</td>	
 	</table>
 
